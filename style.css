@@ -136,7 +136,7 @@ ul { list-style: none; }
    LAYOUT
 ═══════════════════════════════════════════ */
 .container {
-  max-width: 880px; margin: 0 auto;
+  max-width: 1080px; margin: 0 auto;
   padding: 0 clamp(1.5rem, 5vw, 3rem);
 }
 .container-narrow { max-width: 660px; }
@@ -189,7 +189,7 @@ ul { list-style: none; }
 }
 .hero-name {
   font-family: var(--font-head);
-  font-size: clamp(3rem, 7vw, 5.2rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 700; line-height: 1.06;
   letter-spacing: -0.03em; color: var(--ink);
   margin-bottom: 0.65rem;
@@ -285,13 +285,13 @@ ul { list-style: none; }
 .pill:hover { border-color: var(--ink); color: var(--ink); background: var(--surface-2); }
 
 .about-skills h3 {
-  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em;
+  font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.15em;
   color: var(--red); font-weight: 600; margin-bottom: 1rem;
 }
 .skill-list { display: flex; flex-direction: column; }
 .skill-list li {
   padding: 0.55rem 0; border-bottom: 1px solid var(--border);
-  color: var(--text); font-size: 0.875rem;
+  color: var(--text); font-size: 1rem;
   display: flex; align-items: center; gap: 0.6rem;
   transition: color var(--ease);
 }
@@ -460,6 +460,20 @@ ul { list-style: none; }
 
 .contact-alt { font-size: 0.84rem; color: var(--text-dim); text-align: center; margin-top: 1rem; }
 .contact-alt a { color: var(--red); text-decoration: underline; text-underline-offset: 3px; }
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.contact-info a {
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 /* ═══════════════════════════════════════════
    FOOTER
