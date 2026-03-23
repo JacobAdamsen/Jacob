@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav id="nav">
+    <a href="#top" class="nav-logo">YN</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <!-- ── MOBILE DRAWER ── -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose">&#10005;</button>
+    <ul>
+      <li><a href="#about" class="drawer-link">About</a></li>
+      <li><a href="#experience" class="drawer-link">Experience</a></li>
+      <li><a href="#projects" class="drawer-link">Projects</a></li>
+      <li><a href="#education" class="drawer-link">Education</a></li>
+      <li><a href="#contact" class="drawer-link">Contact</a></li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section id="top" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Your Name</h1>
+          <h2 class="hero-title">Your Job Title / Field</h2>
+          <p class="hero-sub">Short punchy one-liner about what you do and what drives you.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">See My Work</a>
+            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-placeholder">YN</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">//</span> About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Write 2–3 sentences here about who you are, your background, and your core expertise.
+              Keep it personal and direct — this is the first impression visitors get.
+            </p>
+            <p>
+              Mention what you're passionate about professionally: the problems you love solving,
+              the technologies or methods you work with, and what sets you apart.
+            </p>
+            <div class="about-links">
+              <a href="mailto:you@example.com" class="pill">✉ you@example.com</a>
+              <a href="https://github.com/yourusername" target="_blank" class="pill">⌥ GitHub</a>
+              <a href="https://linkedin.com/in/yourprofile" target="_blank" class="pill">in LinkedIn</a>
+            </div>
+          </div>
+          <div class="about-skills">
+            <h3>Core Skills</h3>
+            <ul class="skill-list">
+              <li>Skill One</li>
+              <li>Skill Two</li>
+              <li>Skill Three</li>
+              <li>Skill Four</li>
+              <li>Skill Five</li>
+              <li>Skill Six</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">//</span> Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-company">Company Name</h3>
+                  <p class="card-role">Your Role / Title</p>
+                </div>
+                <span class="card-date">2020 – Present · City, Country</span>
+              </div>
+              <ul class="card-bullets">
+                <li>Describe a key responsibility or achievement here.</li>
+                <li>Quantify results where possible — numbers stand out.</li>
+                <li>Mention tools, technologies, or methodologies used.</li>
+              </ul>
+              <div class="card-tags">
+                <span>Tag One</span><span>Tag Two</span><span>Tag Three</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-company">Previous Company</h3>
+                  <p class="card-role">Previous Role</p>
+                </div>
+                <span class="card-date">2016 – 2020 · City, Country</span>
+              </div>
+              <ul class="card-bullets">
+                <li>Describe your work and impact in this role.</li>
+                <li>Focus on outcomes, not just responsibilities.</li>
+              </ul>
+              <div class="card-tags">
+                <span>Tag A</span><span>Tag B</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-company">Earlier Role</h3>
+                  <p class="card-role">Junior / Research Position</p>
+                </div>
+                <span class="card-date">2013 – 2016 · City, Country</span>
+              </div>
+              <ul class="card-bullets">
+                <li>Brief description of this earlier position.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">//</span> Projects</h2>
+        <div class="projects-grid">
+
+          <a href="https://github.com/yourusername/project-one" target="_blank" class="project-card">
+            <div class="project-icon">◈</div>
+            <h3>Project One</h3>
+            <p class="project-role">Owner / Creator</p>
+            <p class="project-desc">
+              Short description of what this project does, why it exists, and who uses it.
+              Mention the tech stack or key achievement.
+            </p>
+            <div class="project-tags">
+              <span>Python</span><span>Open Source</span>
+            </div>
+            <span class="project-link-arrow">→</span>
+          </a>
+
+          <a href="https://github.com/yourusername/project-two" target="_blank" class="project-card">
+            <div class="project-icon">◇</div>
+            <h3>Project Two</h3>
+            <p class="project-role">Co-maintainer</p>
+            <p class="project-desc">
+              Describe this project. What problem does it solve?
+              What's your contribution?
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>API</span>
+            </div>
+            <span class="project-link-arrow">→</span>
+          </a>
+
+          <a href="https://github.com/yourusername/project-three" target="_blank" class="project-card">
+            <div class="project-icon">△</div>
+            <h3>Project Three</h3>
+            <p class="project-role">Core Developer</p>
+            <p class="project-desc">
+              Another project you've worked on. Highlight stars, downloads,
+              or other signals of impact.
+            </p>
+            <div class="project-tags">
+              <span>Rust</span><span>CLI</span>
+            </div>
+            <span class="project-link-arrow">→</span>
+          </a>
+
+          <a href="#" class="project-card project-card-ghost">
+            <div class="project-icon">+</div>
+            <h3>More on GitHub</h3>
+            <p class="project-desc">View all my repositories and contributions.</p>
+            <span class="project-link-arrow">→</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EDUCATION ── -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">//</span> Education</h2>
+        <div class="edu-grid">
+
+          <div class="edu-card">
+            <span class="edu-year">2010 – 2014</span>
+            <h3>PhD in Your Field</h3>
+            <p class="edu-inst">University Name · City, Country</p>
+            <p class="edu-desc">Thesis topic or focus area. Key achievements or awards during the program.</p>
+          </div>
+
+          <div class="edu-card">
+            <span class="edu-year">2008 – 2010</span>
+            <h3>MSc Your Discipline</h3>
+            <p class="edu-inst">University Name · City, Country</p>
+            <p class="edu-desc">Focus area or specialisation. Optional note on thesis or distinction.</p>
+          </div>
+
+        </div>
+
+        <!-- Publications teaser -->
+        <div class="pub-teaser">
+          <p>📄 Published <strong>20+ peer-reviewed papers</strong> — h-index: 13</p>
+          <a href="publications.html" class="btn btn-ghost btn-sm">View Publications →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── PERSONAL ── -->
+    <section class="section">
+      <div class="container container-narrow">
+        <h2 class="section-title"><span class="accent">//</span> Outside Work</h2>
+        <p class="personal-text">
+          Write a short, human paragraph here about your life outside work. Hobbies, family,
+          passions — whatever makes you a person, not just a professional profile.
+          This section makes you memorable.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section section-alt">
+      <div class="container container-narrow">
+        <h2 class="section-title"><span class="accent">//</span> Contact</h2>
+        <p class="contact-sub">Have a project, question, or just want to say hi? Reach out.</p>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message →</button>
+        </form>
+        <p class="contact-alt">Or email me directly at <a href="mailto:you@example.com">you@example.com</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Your Name · All rights reserved</span>
+      <div class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="mailto:you@example.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
