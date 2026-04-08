@@ -3,289 +3,216 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jacob Hilmar Adamsen — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Jacob Hilmar Adamsen, MSc student in biomechanical engineering." />
+  <title>Jacob Hilmar Adamsen | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="page-glow" aria-hidden="true"></div>
 
-  <!-- ── NAV ── -->
-  <nav id="nav">
-    <a href="#top" class="nav-logo">JHA</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="nav-menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
-  </nav>
+  <header class="site-header" id="top">
+    <nav id="nav" class="nav" aria-label="Primary">
+      <a href="#top" class="nav-logo" aria-label="Jacob Hilmar Adamsen home">JHA</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="menuBtn" aria-controls="mobileDrawer" aria-expanded="false" aria-label="Open menu">Menu</button>
+    </nav>
 
-  <!-- ── MOBILE DRAWER ── -->
-  <div class="mobile-drawer" id="mobileDrawer">
-    <button class="drawer-close" id="drawerClose">&#10005;</button>
-    <ul>
-      <li><a href="#about" class="drawer-link">About</a></li>
-      <li><a href="#experience" class="drawer-link">Experience</a></li>
-      <li><a href="#projects" class="drawer-link">Projects</a></li>
-      <li><a href="#education" class="drawer-link">Education</a></li>
-      <li><a href="#contact" class="drawer-link">Contact</a></li>
-    </ul>
-  </div>
-  <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">Close</button>
+      <ul>
+        <li><a href="#about" class="drawer-link">About</a></li>
+        <li><a href="#experience" class="drawer-link">Experience</a></li>
+        <li><a href="#projects" class="drawer-link">Projects</a></li>
+        <li><a href="#education" class="drawer-link">Education</a></li>
+        <li><a href="#contact" class="drawer-link">Contact</a></li>
+      </ul>
+    </aside>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+  </header>
 
   <main>
-
-    <!-- ── HERO ── -->
-    <section id="top" class="hero">
-      <div class="hero-inner">
-        <div class="hero-text">
-          <p class="hero-greeting">Hello, I'm</p>
-          <h1 class="hero-name">Jacob Hilmar Adamsen</h1>
-          <h2 class="hero-title">MSc in Biomechanical Engineering</h2>
-          <p class="hero-sub">Engineering student with a strong interest in applying advanced engineering to the human body</p>
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">See My Work</a>
-            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
-          </div>
-        </div>
-        <div class="hero-avatar">
-          <div class="avatar-ring">
-            <img src="Me.png" alt="Jacob Hilmar Adamsen" class="avatar-img" width= "200" height="200" object-fit="cover" border-radius="50">
-          </div>
-        </div>
-      </div>
-      <div class="hero-scroll-hint">
-        <span>scroll</span>
-        <div class="scroll-line"></div>
-      </div>
-    </section>
-
-    <!-- ── ABOUT ── -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="section-title"><span class="accent">//</span> About Me</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              Write 2–3 sentences here about who you are, your background, and your core expertise.
-              Keep it personal and direct — this is the first impression visitors get.
-            </p>
-            <p>
-              Mention what you're passionate about professionally: the problems you love solving,
-              the technologies or methods you work with, and what sets you apart.
-            </p>
-            <div class="about-links">
-              <a href="mailto:jhadamsen@gmail.com.com" class="pill">✉ jhadamsen@gmail.com</a>
-              <a href="https://github.com/jacobadamsen" target="_blank" class="pill">⌥ GitHub</a>
-              <a href="https://linkedin.com/in/jacob-hilmar-adamsen-7732a8221" target="_blank" class="pill">LinkedIn</a>
-            </div>
-          </div>
-          <div class="about-skills">
-            <h3>Core Skills</h3>
-            <ul class="skill-list">
-              <li>Skill One</li>
-              <li>Skill Two</li>
-              <li>Skill Three</li>
-              <li>Skill Four</li>
-              <li>Skill Five</li>
-              <li>Skill Six</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── EXPERIENCE ── -->
-    <section id="experience" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title"><span class="accent">//</span> Experience</h2>
-        <div class="timeline">
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="card-header">
-                <div>
-                  <h3 class="card-company">Company Name</h3>
-                  <p class="card-role">Your Role / Title</p>
-                </div>
-                <span class="card-date">2020 – Present · City, Country</span>
-              </div>
-              <ul class="card-bullets">
-                <li>Describe a key responsibility or achievement here.</li>
-                <li>Quantify results where possible — numbers stand out.</li>
-                <li>Mention tools, technologies, or methodologies used.</li>
-              </ul>
-              <div class="card-tags">
-                <span>Tag One</span><span>Tag Two</span><span>Tag Three</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="card-header">
-                <div>
-                  <h3 class="card-company">Previous Company</h3>
-                  <p class="card-role">Previous Role</p>
-                </div>
-                <span class="card-date">2016 – 2020 · City, Country</span>
-              </div>
-              <ul class="card-bullets">
-                <li>Describe your work and impact in this role.</li>
-                <li>Focus on outcomes, not just responsibilities.</li>
-              </ul>
-              <div class="card-tags">
-                <span>Tag A</span><span>Tag B</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="card-header">
-                <div>
-                  <h3 class="card-company">Earlier Role</h3>
-                  <p class="card-role">Junior / Research Position</p>
-                </div>
-                <span class="card-date">2013 – 2016 · City, Country</span>
-              </div>
-              <ul class="card-bullets">
-                <li>Brief description of this earlier position.</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ── PROJECTS ── -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title"><span class="accent">//</span> Projects</h2>
-        <div class="projects-grid">
-
-          <a href="https://github.com/yourusername/project-one" target="_blank" class="project-card">
-            <div class="project-icon">◈</div>
-            <h3>Project One</h3>
-            <p class="project-role">Owner / Creator</p>
-            <p class="project-desc">
-              Short description of what this project does, why it exists, and who uses it.
-              Mention the tech stack or key achievement.
-            </p>
-            <div class="project-tags">
-              <span>Python</span><span>Open Source</span>
-            </div>
-            <span class="project-link-arrow">→</span>
-          </a>
-
-          <a href="https://github.com/yourusername/project-two" target="_blank" class="project-card">
-            <div class="project-icon">◇</div>
-            <h3>Project Two</h3>
-            <p class="project-role">Co-maintainer</p>
-            <p class="project-desc">
-              Describe this project. What problem does it solve?
-              What's your contribution?
-            </p>
-            <div class="project-tags">
-              <span>JavaScript</span><span>API</span>
-            </div>
-            <span class="project-link-arrow">→</span>
-          </a>
-
-          <a href="https://github.com/yourusername/project-three" target="_blank" class="project-card">
-            <div class="project-icon">△</div>
-            <h3>Project Three</h3>
-            <p class="project-role">Core Developer</p>
-            <p class="project-desc">
-              Another project you've worked on. Highlight stars, downloads,
-              or other signals of impact.
-            </p>
-            <div class="project-tags">
-              <span>Rust</span><span>CLI</span>
-            </div>
-            <span class="project-link-arrow">→</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── EDUCATION ── -->
-    <section id="education" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title"><span class="accent">//</span> Education</h2>
-        <div class="edu-grid">
-
-          <div class="edu-card">
-            <span class="edu-year">2024 – Now</span>
-            <h3>Masters, Biomechanical Engineering</h3>
-            <p class="edu-inst">Aalborg Universitet · Aalborg, Denmark</p>
-            <p class="edu-desc">This specialisation combines my bachelors in mechanical engineering with knowledge about the human body.</p>
-          </div>
-
-          <div class="edu-card">
-            <span class="edu-year">2021 – 2024</span>
-            <h3>Bachelor, Mechanical Engineering</h3>
-            <p class="edu-inst">Aalborg Universitet · Aalborg, Denmark</p>
-            <p class="edu-desc">Broad fundamental background in the field of mechanical engineering.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ── PERSONAL ── -->
-    <section class="section">
-      <div class="container container-narrow">
-        <h2 class="section-title"><span class="accent">//</span> Outside Work</h2>
-        <p class="personal-text">
-          Write a short, human paragraph here about your life outside work. Hobbies, family,
-          passions — whatever makes you a person, not just a professional profile.
-          This section makes you memorable.
+    <section class="hero section-reveal" aria-label="Introduction">
+      <div class="hero-content">
+        <p class="eyebrow">Biomechanical Engineering</p>
+        <h1>Jacob Hilmar Adamsen</h1>
+        <p class="hero-lead">
+          MSc student focused on connecting mechanical engineering methods with human movement,
+          rehabilitation, and medical technology.
         </p>
-      </div>
-    </section>
-
-    <!-- ── CONTACT ── -->
-    <section id="contact" class="section section-alt">
-      <div class="container container-narrow">
-
-        <h2 class="section-title">
-          <span class="accent">//</span> Contact
-        </h2>
-
-        <div class="contact-info">
-          <p><strong>Email:</strong> 
-            <a href="mailto:jhadamsen@gmail.com">jhadamsen@gmail.com</a></p>
-          <p><strong>Phone:</strong> +45 40 61 40 16</p>
-          <p><strong>LinkedIn:</strong> 
-            <a href="https://www.linkedin.com/in/jacob-hilmar-adamsen-7732a8221" target="_blank">www.linkedin.com/in/jacob-hilmar-adamsen</a>
-          </p>
-          <p><strong>GitHub:</strong> 
-            <a href="https://github.com/JacobAdamsen" target="_blank">github.com/JacobAdamsen</a>
-          </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
         </div>
+        <p class="hero-edu-title">Education</p>
+        <ul class="hero-metrics" aria-label="Education">
+          <li><span>2024 - now</span>MSc in Biomechanical Engineering</li>
+          <li><span>2021 - 2024</span>BSc in Mechanical Engineering</li>
+          <li><span>Aalborg University</span>Aalborg, Denmark</li>
+        </ul>
+      </div>
 
+      <div class="hero-visual" aria-hidden="true">
+        <div class="portrait-wrap">
+          <img src="Me.png" alt="Portrait of Jacob Hilmar Adamsen" class="portrait" loading="eager" />
+        </div>
       </div>
     </section>
 
+    <section id="about" class="section section-reveal">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Engineering with a human focus</h2>
+          <p>
+            I am currently studying biomechanical engineering, where I build on a mechanical
+            engineering foundation and apply it to the human body. My interests sit at the
+            intersection of solid engineering analysis, movement science, and practical clinical value.
+          </p>
+          <p>
+            I enjoy projects that require modeling, experimentation, and clear communication across
+            technical and non-technical stakeholders.
+          </p>
+          <div class="chip-row">
+            <a href="mailto:jhadamsen@gmail.com" class="chip">jhadamsen@gmail.com</a>
+            <a href="https://github.com/JacobAdamsen" target="_blank" rel="noreferrer" class="chip">GitHub</a>
+            <a href="https://www.linkedin.com/in/jacob-hilmar-adamsen-7732a8221" target="_blank" rel="noreferrer" class="chip">LinkedIn</a>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Core Skills</h3>
+          <ul class="skill-list">
+            <li>Biomechanics and human motion analysis</li>
+            <li>Mechanical design and structural reasoning</li>
+            <li>Data-driven engineering workflows</li>
+            <li>Experimental planning and validation</li>
+            <li>Technical communication and teamwork</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt section-reveal">
+      <div class="container">
+        <p class="eyebrow">Experience</p>
+        <h2>Applied projects and professional development</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Biomechanical Engineering MSc</h3>
+                  <p class="muted">Aalborg University</p>
+                </div>
+                <p class="muted">2024 - now | Aalborg, Denmark</p>
+              </div>
+              <ul>
+                <li>Working with biomechanical methods that connect engineering models to human movement.</li>
+                <li>Combining simulation, analysis, and experimental thinking to evaluate real-world outcomes.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Mechanical Engineering BSc</h3>
+                  <p class="muted">Aalborg University</p>
+                </div>
+                <p class="muted">2021 - 2024 | Aalborg, Denmark</p>
+              </div>
+              <ul>
+                <li>Developed a broad engineering foundation in mechanics, materials, and system-level problem solving.</li>
+                <li>Strengthened collaboration skills through project-based and interdisciplinary coursework.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-reveal">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+        <div class="cards-grid">
+          <a class="project-card" href="https://github.com/JacobAdamsen" target="_blank" rel="noreferrer">
+            <p class="project-label">Engineering</p>
+            <h3>Biomechanics Study Work</h3>
+            <p>Course and project work focused on understanding and quantifying human-body mechanics.</p>
+            <span class="arrow">Read more</span>
+          </a>
+
+          <a class="project-card" href="https://github.com/JacobAdamsen" target="_blank" rel="noreferrer">
+            <p class="project-label">Analysis</p>
+            <h3>Data and Modeling Exercises</h3>
+            <p>Assignments where data interpretation and engineering models are used to support decisions.</p>
+            <span class="arrow">Read more</span>
+          </a>
+
+          <a class="project-card" href="https://github.com/JacobAdamsen" target="_blank" rel="noreferrer">
+            <p class="project-label">Development</p>
+            <h3>Technical Portfolio Repository</h3>
+            <p>Ongoing repository for experiments, documentation, and development of technical communication.</p>
+            <span class="arrow">Read more</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-alt section-reveal">
+      <div class="container">
+        <p class="eyebrow">Education</p>
+        <h2>Academic background</h2>
+        <div class="cards-grid education-grid">
+          <article class="edu-card">
+            <p class="project-label">2024 - now</p>
+            <h3>MSc, Biomechanical Engineering</h3>
+            <p>Aalborg University, Aalborg</p>
+          </article>
+          <article class="edu-card">
+            <p class="project-label">2021 - 2024</p>
+            <h3>BSc, Mechanical Engineering</h3>
+            <p>Aalborg University, Aalborg</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-reveal">
+      <div class="container contact-wrap">
+        <p class="eyebrow">Contact</p>
+        <h2>Let us build something useful</h2>
+        <p>Open to project collaboration, student opportunities, and engineering conversations.</p>
+
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:jhadamsen@gmail.com">jhadamsen@gmail.com</a></li>
+          <li><strong>Phone:</strong> +45 40 61 40 16</li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jacob-hilmar-adamsen-7732a8221" target="_blank" rel="noreferrer">linkedin.com/in/jacob-hilmar-adamsen-7732a8221</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/JacobAdamsen" target="_blank" rel="noreferrer">github.com/JacobAdamsen</a></li>
+        </ul>
+      </div>
+    </section>
   </main>
 
-  <!-- ── FOOTER ── -->
-  <footer>
+  <footer class="footer">
     <div class="container footer-inner">
-      <span>© <span id="year"></span> Jacob Hilmar Adamsen · All rights reserved</span>
+      <p>Copyright <span id="year"></span> Jacob Hilmar Adamsen</p>
       <div class="footer-links">
         <a href="mailto:jhadamsen@gmail.com">Email</a>
-        <a href="https://github.com/JacobAdamsen" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/jacob-hilmar-adamsen-7732a8221" target="_blank">LinkedIn</a>
+        <a href="https://github.com/JacobAdamsen" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/jacob-hilmar-adamsen-7732a8221" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>
     </div>
   </footer>
